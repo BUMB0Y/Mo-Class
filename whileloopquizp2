@@ -1,9 +1,0 @@
-import math
-numLowerRange = 20
-numUpperRange = 200
-
-numFrequency = 10
-numSum = numLowerRange
-for i in range((numUpperRange - numLowerRange)//numFrequency):
-    numSum = numSum + numFrequency
-    print(numSum)
