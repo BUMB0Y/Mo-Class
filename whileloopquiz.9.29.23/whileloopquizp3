@@ -1,0 +1,9 @@
+import math
+numLowerRange = 35
+numUpperRange = 80
+
+numFrequency = 5
+numSum = numUpperRange
+for i in range(((numUpperRange - numLowerRange)//numFrequency)+1):
+    print(numSum)
+    numSum = numSum - numFrequency
