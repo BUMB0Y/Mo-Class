@@ -1,0 +1,5 @@
+answer = int(input("number now:"))
+
+while answer > 0:
+    answer -= 1
+    print("beep")
