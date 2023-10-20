@@ -1,0 +1,10 @@
+Answer = str(input("Do you prefer cats, dogs, or fish?"))
+
+if (Answer == "cats"):
+    print("meow")
+elif(Answer == "dogs"):
+    print("woof woof")
+elif(Answer == "fish"):
+    print("blub blub")
+else:
+    print("not a choice bud")
