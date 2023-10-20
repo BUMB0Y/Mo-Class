@@ -1,0 +1,13 @@
+import random
+def itemDropper():
+    item = random.randrange (1,18)
+    if item == 1 or 2 or 3 or 4:
+        item = "potion"
+    if item == 5 or 6 or 7 or 8 or 9 or 10:
+        item = "cupcake"
+    if item == 11 or 12 or 13 or 14:
+        item = "dirty sock"
+    if item == 15 or 16 or 17 or 18:
+        item = "nothing"
+    print(item)
+ItemDropper()
