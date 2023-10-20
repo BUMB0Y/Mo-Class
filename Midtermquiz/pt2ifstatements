@@ -1,0 +1,10 @@
+answer = input("how many minutes of exercise do you get?:")
+
+if (answer >= 500):
+    print("hydrate and eat protein")
+elif (answer>=100):
+    print("thats perfect")
+elif (answer >= 20):
+    print("get a bit more exercise")
+else:
+    print("you need to exercise")
