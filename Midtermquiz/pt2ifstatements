@@ -1,4 +1,4 @@
-answer = input("how many minutes of exercise do you get?:")
+answer = int(input("how many minutes of exercise do you get?:"))
 
 if (answer >= 500):
     print("hydrate and eat protein")
