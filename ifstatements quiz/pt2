@@ -1,4 +1,4 @@
-a = input("whats the temp?:")
+a = int(input("whats the temp?:"))
 if a <= 60:
     print("jacketime")
 else:
