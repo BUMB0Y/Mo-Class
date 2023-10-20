@@ -1,0 +1,2 @@
+for i in range (6, 39, 3):
+    print(i)
