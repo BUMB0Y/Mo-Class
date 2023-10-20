@@ -1,0 +1,6 @@
+a = input("whats the temp?:")
+if a <= 60:
+    print("jacketime")
+else:
+    print("ur chillin tshirt time")
+     
