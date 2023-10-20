@@ -1,0 +1,5 @@
+answer = input()
+if answer == "y":
+    print("peanutbutterjellytime")
+else:
+    print("")
