@@ -1,0 +1,4 @@
+def Multbyfive(num):
+    num *= 5
+    print(num)
+Multbyfive(7)
