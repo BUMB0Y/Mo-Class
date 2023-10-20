@@ -1,0 +1,94 @@
+import random
+class Lightbulb:
+    def __init__ (self, on, color, damaged):
+        self.on = on
+        self.color = color
+        self.damaged = damaged
+    def onmode(self):
+        if self.on == True and self.damaged == False:
+            self.on = True
+    def offmode(self):
+        if self.on == False or self.damaged == True:
+            self.on = False
+    def burnout(self):
+        if Lightbulb.on == True:
+            x = random.randrange(1,100)
+            if (x <= 5):
+                self.damaged = True
+    def printfunc(self):
+        if self.on == True:
+            print("on")
+        else:
+            print("off")
+        
+        if self.color == (255,0,0):
+            print("red")
+        elif self.color == (0,255,0):
+            print("green")
+        elif self.color == (0,0,255):
+            print("blue")
+        
+        if self.damaged == True:
+            print("damaged")
+        else:
+            print("good condition")
+        
+        print(self.on, self.color, self.damaged)
+
+RED = (255,0,0)
+GREEN = (0,255,0)
+BLUE = (0,0,255)
+
+Light1 = Lightbulb(True, (RED), False)
+Light2 = Lightbulb(False, (GREEN), False)
+Light3 = Lightbulb(True, (BLUE), True)
+
+Light1.printfunc()
+Light2.printfunc()
+Light3.printfunc()
+            print("good condition")
+        
+        print(self.on, self.color, self.damaged)
+
+RED = (255,0,0)
+GREEN = (0,255,0)
+BLUE = (0,0,255)
+
+Light1 = Lightbulb(True, (RED), False)
+Light2 = Lightbulb(False, (GREEN), False)
+Light3 = Lightbulb(True, (BLUE), True)
+
+Light1.printfunc()
+Light2.printfunc()
+Light3.printfunc()ged")
+        else:
+            print("good condition")
+        
+        print(self.on, self.color, self.damaged)
+
+RED = (255,0,0)
+GREEN = (0,255,0)
+BLUE = (0,0,255)
+
+Light1 = Lightbulb(True, (RED), False)
+Light2 = Lightbulb(False, (GREEN), False)
+Light3 = Lightbulb(True, (BLUE), True)
+
+Light1.printfunc()
+Light2.printfunc()
+Light3.printfunc()
+            print("good condition")
+        
+        print(self.on, self.color, self.damaged)
+
+RED = (255,0,0)
+GREEN = (0,255,0)
+BLUE = (0,0,255)
+
+Light1 = Lightbulb(True, (RED), False)
+Light2 = Lightbulb(False, (GREEN), False)
+Light3 = Lightbulb(True, (BLUE), True)
+
+Light1.printfunc()
+Light2.printfunc()
+Light3.printfunc()
