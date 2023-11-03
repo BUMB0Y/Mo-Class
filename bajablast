@@ -1,0 +1,33 @@
+import pygame
+
+RED = (255, 100, 100)
+GREEN = (100, 255, 100)
+
+SIZE = pygame.Vector2(800, 800)
+
+pygame.init()  
+screen = pygame.display.set_mode(SIZE)
+pygame.display.set_caption("thangawang")  # sets the window title
+  # creates game screen
+clock = pygame.time.Clock() #set up clock
+endProgram = False #variable to run our game loop
+keys = []
+time = [0,80]
+money: list[float] = [1,2,3,4,5,6,7,8,9,30,123,123,213,213,54,65,46,5,4,4,56,4,65,3]
+
+
+# def drawGraph(data: list[float], xMin: float, xMax: float, yMin: float, yMax: float):
+def drawGraph(data: list[float], widthScale: float, heightScale: float):
+    for i in range (len(money)):
+        x = i*widthScale
+        ystart = data[i - 1] * heightScale
+        yend = data [i] * heightScale
+
+        pygame.draw.rect(screen, RED if yend - ystart < 0 else GREEN, (x, SIZE.y - max(ystart, yend), widthScale, abs(ystart - yend)))
+                         
+drawGraph(money, 10, 3)
+
+pygame.display.flip()
+
+while True:
+    pass
