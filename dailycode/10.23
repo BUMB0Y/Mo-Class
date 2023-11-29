@@ -1,1 +1,25 @@
 
+void BattleSystem(){
+	int health = 100;
+	int Enemyhealth = 20;
+	int Randdmgvalue = 0;
+	cout << "BATTLE START, FIGHT:" << endl;
+	while (health > 0 && Enemyhealth > 0)
+		cin >> input;
+		if (input == "f" and Playerinv[0] == true)
+		{
+			//Randdmgvalue = random
+			cout << "You hit the monsters for" << Randdmgvalue << endl;
+			Enemyhealth -= Randdmgvalue;
+			cout << "Your Health:" << health << endl;
+			cout << "Enemy Health:" << Enemyhealth << endl;
+		}
+		else
+		{
+			cout << "You don't have a sword!" << endl;
+			cout << "The monster hits you for 10";
+			health -= 10;
+			cout << "Your Health:" << health << endl;
+			cout << "Enemy Health:" << Enemyhealth << endl;
+		}
+}
